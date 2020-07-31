@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: BebasKai;
+    src: url("../font/BebasKai.ttf");
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #151315;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.layer-container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    transform-style: preserve-3d;
+}
+.layer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg-tree{
+    background-image: url("../images/mountain2.jpg");
+}
+.front-tree{
+    background-image: url("../images/mountain1.png");
+}
+.parallax-text{
+    font-size: 150px;
+    color: #FFFF;
+    position: absolute;
+    font-family: BebasKai;
+    letter-spacing: 15px;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+nav{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding: 40px 5%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.logo{
+    color: #FFFF;
+    font-family: BebasKai;
+    font-size: 30px;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+button
+{
+    width: 100px;
+    height: 34px;
+    outline: none;
+    border: none;
+    background-color: #FFFF;
+    border-radius: 30px;
+    color: #000000;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+}
+button:active{
+
+    transform: scale(1.1);
+}
+.categories-container{
+    height: 50vh;
+    background-color: #141315;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header h1,h4{
+    font-family: BebasKai;
+    line-height: 10px;
+    color: #FFFF;
+}
+.header h1{
+    font-size: 30px;
+}
+.header h4{
+    font-size: 16px;
+    letter-spacing: 10px;
+    opacity: 0.9;
+}
+.box-1,.box-2,.box-3{
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+    background-color: #FFFF;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.product-container{
+    display: flex;
+    justify-content: center;
+}
+.box-1{
+    background-image: url("../images/paris.jpg");
+}
+.box-2{
+    background-image: url("../images/2.png");
+}
+.box-3{
+    background-image: url("../images/3.jpg");
+}
+.box-1 font, .box-2 font, .box-3 font{
+    position: absolute;
+    bottom: 0px;
+    color: #fcfcfc;
+    text-align: center;
+    height: 30px;
+    background: linear-gradient(0deg,#151315, 0%,transparent);
+    width: 100%;
+}
+.line{
+    align-self: end;
+    width: 50%;
+    border-right: 1px solid #ffff;
+    height: 20%;
+    margin-bottom: 4em;
+    position: absolute;
+    bottom: 5px;
+}
+.line::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 11px 0px 11px;
+    border-color: #ffff transparent transparent transparent;
+    right: -0.7em;
+    bottom: -2px;
